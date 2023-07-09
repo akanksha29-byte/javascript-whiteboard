@@ -1,0 +1,27 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: ghostwhite;
+  padding: 10px 20px;
+}
+
+.header-container .paint-options-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}

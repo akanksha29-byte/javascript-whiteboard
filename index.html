@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="main-container">
+        <div class="header-container">
+          <div class="paint-options-container">
+            <div class="brush-selector-container mr-20">
+              <input name="tool-type" id="brush" type="radio" />
+              <label for="brush">Brush</label>
+              <input name="tool-type" id="pencil-type" type="radio" />
+              <label for="pencil">Pencil</label>
+            </div>
+            <div class="brush-size-container mr-20">
+              <label for="brush-size">Size</label>
+              <input
+                id="brush-size"
+                name="brush-size"
+                type="range"
+                min="0"
+                max="100"
+              />
+            </div>
+
+            <div class="color-selector-container mr-20">
+              <label for="color-selector">Color</label>
+              <input id="color-selector" name="color-selector" type="color" />
+            </div>
+
+            <div class="action-container">
+              <button class="reset-btn">reset</button>
+              <button class="save-btn">save</button>
+            </div>
+          </div>
+          <div class="theme-container">
+            <input name="theme-type" id="dark-theme" type="radio" />
+            <label for="dark-theme">Dark</label>
+            <input name="theme-type" id="light-theme" type="radio" />
+            <label for="light-theme">Light</label>
+          </div>
+        </div>
+        <canvas id="canvas-container"></canvas>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
